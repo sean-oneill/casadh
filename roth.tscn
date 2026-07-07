@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://bu0n00y01arj5"]
+
+[ext_resource type="Texture2D" uid="uid://dg71eg1ic6wu7" path="res://icon.svg" id="1_fyotg"]
+[ext_resource type="Script" uid="uid://5yglkuwj8u7m" path="res://roth.gd" id="1_sta5f"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ac8hd"]
+
+[node name="Roth" type="Area2D" unique_id=16907781]
+scale = Vector2(5, 5)
+script = ExtResource("1_sta5f")
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1384888065]
+scale = Vector2(5, 5)
+shape = SubResource("CircleShape2D_ac8hd")
+debug_color = Color(0.36078432, 0.5294118, 0.84705883, 0.47058824)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1036285864]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_fyotg")

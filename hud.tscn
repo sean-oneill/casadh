@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://cjo2g0f86sjqt"]
+
+[ext_resource type="Script" uid="uid://dfjql32m4jkeb" path="res://hud.gd" id="1_37p78"]
+
+[node name="HUD" type="CanvasLayer" unique_id=886208359]
+script = ExtResource("1_37p78")
+
+[node name="SpinButton" type="Button" parent="." unique_id=1085277475]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -23.0
+offset_right = 23.0
+offset_bottom = 31.0
+grow_horizontal = 2
+text = "Spin!"
+
+[connection signal="pressed" from="SpinButton" to="." method="_on_spin_button_pressed"]
